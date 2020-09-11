@@ -1,6 +1,13 @@
-// document.getElementById("demo");
-// alert("Hi, I got Youtube");
-console.log("Hi, I got Youtube");
+const click = (clazz) => {
+  const buttons = document.getElementsByClassName(clazz);
+  for (const button of buttons) {
+    button.click();
+  }
+}
 
-// const skipButton = document.getElementsByClassName('ytp-ad-preview-container countdown-next-to-thumbnail');
-// console.log(skipButton)
+setInterval(() => {
+  click("ytp-ad-skip-button-text");
+  click("ytp-ad-overlay-close-button");
+  click("ytp-ad-skip-button ytp-button");
+  console.log("Gotcha bitch");
+}, 300);

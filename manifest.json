@@ -1,36 +1,14 @@
 {
     "manifest_version": 2,
-
     "name": "Youtube Skipper",
     "version": "1.0",
-
+    "description": "Skip ads on Youtube",
     "content_scripts": [
         {
-           "matches": ["*://www.youtube.com/watch*"],
-           "js": ["content.js"]
+          "matches": ["https://*.youtube.com/*"],
+          "js": ["content.js"]
         }
     ],
-
-    "description": "Skip ads on Youtube",
-    "permissions": [
-        "*://www.youtube.com/watch*",
-        "declarativeContent",
-        "storage",
-        "tabs",
-        "webNavigation"
-    ],
-    "page_action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "128": "images/icons/icon-128.png"
-        }
-    },
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-    },
-    
-
     "icons": {
         "128": "images/icons/icon-128.png"
     }
