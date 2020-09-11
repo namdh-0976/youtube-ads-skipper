@@ -6,8 +6,7 @@ const click = (clazz) => {
 }
 
 setInterval(() => {
+  click("ytp-ad-skip-button ytp-button");
   click("ytp-ad-skip-button-text");
   click("ytp-ad-overlay-close-button");
-  click("ytp-ad-skip-button ytp-button");
-  console.log("Gotcha bitch");
 }, 300);
