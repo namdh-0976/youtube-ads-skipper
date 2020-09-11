@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Skipper",
+    "version": "1.0",
+    "description": "Skip ads on Youtube",
+    "content_scripts": [
+        {
+          "matches": ["https://*.youtube.com/*"],
+          "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "128": "images/icons/icon-128.png"
+    }
+}
